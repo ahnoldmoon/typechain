@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "description": "Learning Typescript by making a Blockchain with it",
   "main": "index.js",
-  "license": "MIT"
+  "repository": "https://github.com/ahnoldmoon/typechain",
+  "author": "munnt <munnt72@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start":"node index.js",
+    "prestart": "tsc"
+  }
 }
