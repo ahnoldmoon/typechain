@@ -7,11 +7,13 @@
   "author": "munnt <munnt72@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "dependencies": {
     "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "tsc-watch": "^2.1.2"
   }
 }
