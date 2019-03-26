@@ -7,7 +7,11 @@
   "author": "munnt <munnt72@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "prestart": "tsc"
+  },
+  "dependencies": {
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
   }
 }
