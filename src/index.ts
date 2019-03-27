@@ -1,14 +1,26 @@
-interface Human{
-    name: string;
-    age: number;
-    gender: string;
+// interface Human{
+//     name: string;
+//     age: number;
+//     gender: string;
+// }
+class Human {
+    public name : string;
+    public age: number;
+    public gender: string;
+    constructor(name: string, age: number, gender: string) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
 }
 
-const person = {
-    name: "munnt",
-    age : 48,
-    gender : "male"
-}
+const lynn = new Human("Lynn", 18, "female");
+
+// const person = {
+//     name: "munnt",
+//     age : 48,
+//     gender : "male"
+// }
 
 // const sayHi = (name:string, age:number, gender:string): string => {
 const sayHi = (person : Human):string => {
@@ -17,6 +29,6 @@ const sayHi = (person : Human):string => {
 };
 
 // console.log(sayHi("munnt", 48, "male"));
-console.log(sayHi(person))
+console.log(sayHi(lynn))
 
 export {};
